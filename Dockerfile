@@ -1,2 +1,3 @@
 FROM fedora
-RUN dnf install -y man which tcpdump dstat net-tools httpie jq ack awscli
+RUN dnf update -y && \
+    dnf install -y man which vim htop tcpdump dstat net-tools httpie jq ack awscli
